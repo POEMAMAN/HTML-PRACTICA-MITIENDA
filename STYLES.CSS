@@ -151,7 +151,31 @@ li {
         flex-wrap: wrap;        
     }
 }
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    header {
+        transform: translatex(20%);
+    }
+    .gallery {
+        transform: translatex(20%);   
+        margin-top: 5%;
+            & .gallery-2, .gallery-4 {
+                transform: translatex(-10%);   
+                    
+        }
+    }
+    .contact-information {
+        transform: translateX(-3%);
+        font-size: 100%;
+            & .page-information {
+                flex-wrap: wrap;
+            }
+    }
+    .end-page {
+        display: flex;
+        justify-content: flex-start;
+        transform: translateX(10%);
+    }
+}
 @media (min-width: 768px) {}
 @media (min-width: 992px) {}
 @media (min-width: 1200px) {}
