@@ -19,11 +19,6 @@ a:link {
     text-decoration: none;
     color: black;
 }
-.right-nav {
-    margin-right: 15%;
-    font-size: smaller;
-    transform: translateX(76%);
-}
 .central-nav{
     transform: translateX(120%);
 }
@@ -83,7 +78,7 @@ a:link {
     justify-content: center;
 }
 .phone, .shop-bag, .person{
-    height: 2%;
+    height: 2%; 
     width: 2%;
 }
 .lens   {
@@ -104,9 +99,57 @@ a:link {
 .bold-size {
     font-weight: bolder;
 }
+li {
+    list-style-type: none;
+}
 
 /* Resto de reglas en orden creciente */
 @media (min-width: 320px) {
+    header {
+        & .right-nav {
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 40%;
+            transform: translateY(-20%);
+            flex-wrap: wrap;
+            margin-right: 20%;
+            padding-right: 60%;
+            transform: translateX(-40%);
+            margin-bottom: 10%;
+
+
+        }
+        & .central-nav{
+            transform: translateX(-20%);
+            font-size: 60%;
+            display: flex;
+                & .shop-route {
+                    margin-left: 10%;
+                }
+        }
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        & .gallery-1, .gallery-2, .gallery-3, .gallery-4, .gallery-5, .gallery-6 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    #text {
+        font-size: 150%;
+    }
+    .contact-information {
+        transform: translateX(0%);
+        font-size: 150%;
+            & .page-information {
+                flex-wrap: wrap;
+            }
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;        
+    }
 }
 @media (min-width: 576px) {}
 @media (min-width: 768px) {}
