@@ -176,6 +176,24 @@ li {
         transform: translateX(10%);
     }
 }
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    header {
+        transform: translatex(5%);
+            & .central-nav {
+                transform: translatex(35%);
+            }
+            & .right-nav {
+                transform: translatex(-10%);
+                transform: translatey(20%);
+            }
+    }
+    .gallery {
+        transform: translatex(0%);   
+        margin-top: 5%;
+        & .gallery-2, .gallery-4 {
+            transform: translatex(0%);  
+        }
+    }
+}
 @media (min-width: 992px) {}
 @media (min-width: 1200px) {}
